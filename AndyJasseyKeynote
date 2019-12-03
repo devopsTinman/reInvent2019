@@ -1,1 +1,42 @@
 reInventing your business
+Undifferentiated Heavy Lifting
+Senior leadership team conviction and alignment
+Top-down aggressive goals
+  GE - 42 applications in 30 days
+  Easy to go a long time dipping your toe in the water
+  Need to train your builders
+  Don't let paralysis stop you before you start
+Compute
+  Instances
+  - reInventing the hypervisor with AWS Nitro System
+  - Chip Innovations
+    - Anaparna
+      - Graviton Chip - designed for continerized microservices
+        - ARM based chip
+        - A1 instances
+        - second version - M6g, R6g, C6g Graviton2 processor
+          - 64 bit core
+          - 5x faster memory
+          - 40% better price performance
+          - 25gb networking
+          - early 2020
+      - p3, p3d ML training
+      - 80-90% of cost of inference engine is prediction (not training)
+      - INF1 instances
+        - low latency
+        - Will be supported by ECS, EKS, SageMaker in 2020
+  Containers
+    - ECS, EKS, Fargate
+    - Fargate
+      - specify CPU, memory, + tasks and image
+      - now for EKS
+  Networking (announcement later today)
+    - 100gb for standard
+    - transit gateway
+  Bring your own Key (Goldman Sachs)
+  - More Secure
+  Amazon S3
+  - Inventory reports
+  - IAM Access Analyzer
+  - S3 Intelligent tiering
+  
