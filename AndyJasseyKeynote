@@ -72,6 +72,7 @@ Compute
   - Cerner - AWS Transcribe
   - TensorFlow
   - MxNet
+  - pyTorch
   - Bunch of companies using SageMaker
     - 50+ features
   - SageMaker Studio - Web Based IDE
@@ -82,4 +83,15 @@ Compute
     - SageMaker Debugger
     - SageMaker Model Monitor
     - SageMaker Autopilot
-    
+  Machine Learning Code Reviews
+  - CodeGuru
+  Machine Learning Call Centers
+  - Amazon Connect
+  Machine Learning in Enterprise
+  - Amazon Kendra
+  VMWare Cloud on AWS
+  - AWS Outposts - racks of on premises
+  AWS Local Zones
+  - extension of an AWS Region close to large cities
+  - single digit latency
+  
