@@ -39,4 +39,47 @@ Compute
   - Inventory reports
   - IAM Access Analyzer
   - S3 Intelligent tiering
-  
+  - S3 Access Points
+    - Customized access permission rules for each of your applications
+    - access point restructed to a a VPC
+  Redshift
+  - Datalake Export - New Service
+  - How do scale cost effectively for diverse data warehouse workloads
+  - Amazon Redshift RA3 Instances with managed storage
+  - separate storage from compute
+  - Storage Throughput is accelerating
+    - CPUs can't keep up
+  - AQUA - Advanced Query Accelerator for Redshift
+    - High speed cache architecture for S3
+  ElasticSearch Managed Service
+  - Loads and loads of log data
+  - storage is expensive at scale
+  - UltraWarm for ElasticSearch
+    - better durability
+    - reduces cost by 90%
+    - 3PB of log data per cluster
+    - analyze years of operational data
+  DBFreedom means the right tool for the right job
+  - DynamoDB
+  - Neptune
+  - TimeStream
+  - Elasticache
+  - QLDB (BlockChain)
+  - DocumentDB (MongoDB)
+  - Apache Managed Cassandra - new offering
+    - use same Cassandra interface
+  Machine Learning in AWS
+  - Cerner - AWS Transcribe
+  - TensorFlow
+  - MxNet
+  - Bunch of companies using SageMaker
+    - 50+ features
+  - SageMaker Studio - Web Based IDE
+    - Machine learning notebooks
+      - SageMaker Notebooks with elastic compute
+    - SageMaker Experiments
+      - captures input parameters, configuration, etc. automatically
+    - SageMaker Debugger
+    - SageMaker Model Monitor
+    - SageMaker Autopilot
+    
