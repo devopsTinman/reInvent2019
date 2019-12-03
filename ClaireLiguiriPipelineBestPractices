@@ -1,0 +1,72 @@
+Containers Fargate/ECS CI/CD Best practices - Claire Liguuri
+- Need to find this
+- Automated Releases
+  - 190 million Deployments / 6 per second
+  - Source
+    - App Code
+    - Infra
+    - Base Image
+    - configuration
+  - Build
+    - artifacts
+  - Preproduction
+    - Alpha
+      - Automated Tests
+    - Beta
+      - Automated integration
+      - Automated load/perf Tests
+      - Automated browser test
+    - Gamma
+      - Automated synthetic Tests
+      - API Smoke tests
+  - SHOULD BE USING TAGS
+    - use buildID from CodeBuild
+    - Can use Immutable image tags
+      - reject anything that tries to overwrite an existing tag
+  - HOW to validate the image before going to production
+    - Add Images scanning
+    - looks at CVEs
+    - CodeBuild can directly deploy to ECS
+  - Can use GitHub Actions
+    - Checkout
+    - Configure AWS Credentials
+    - Deploy Task Definition
+  - Jenkins
+    - using the aws cli in jenkins
+    - ecs wait services-stable
+  - Spinnakar
+    - stages
+- Safe Deployments
+  - roll back automatically on alarms and validation Tests
+  - roll back quickly
+  - bake after deployment - 30 minutes to 24 hour wait time to see if it still
+      works
+  - deploy small at first then more broadly
+  - Use AWS CodeDeploy
+    - avoid downtime
+    - supports blue/green
+      - test traffic listener for green
+      - production traffic listener
+      - make sure health checks pass, then switch to new code
+        - AppSpec file
+        - lifecycle hooks
+        - blue target group stays for a while in case of rollback
+    - use aws cli
+- Repeatable infrastructure changes
+  - security groups, dns, tls, alarms, logs, metrics, storage, desired count
+  - use CloudFormation
+  - insert image ID into infrastructure as code template
+  - CloudFormation can get long
+- Use AWS Cloud Development Kit (AWS CDK)
+  - Open-source framework to define CloudFormation
+  - provides library of higher level resource types
+  - AWS CDK ECS patterns
+    - Application load balanced
+    - network load balanced service
+    - queue processing services
+    - scheduled tasks
+    - generates hundreds of lines of CloudFormation
+  - AWS CDK CLI
+    - npm install -g...
+    - cdk synth
+    - All of these are just classes
