@@ -1,0 +1,62 @@
+Werner Vogels Keynote
+========================================
+Classic Virtualization
+- Mainframe / timesharing
+- VMWare
+AWS Nitro
+- offloading workload to separate cards
+- https://aws.amazon.com/ec2/nitro/
+- up to 4x improvement in instance network Throughput
+- trust no one: Kill Dom0
+- no SSH (or other access) to the hypervisor
+- passive communications design
+- hypervisor cannot talk back to the nitro controller
+  - if it does talk back, then it's compromised
+- nitro controller cannot talk to external control plane
+  - if it does talk back, then it's compromised
+- encrypt everything
+- Root of trust
+  - cryptographically check all components on startup
+------------------------------------------------------
+Firecracker
+- fargate scales up and down much faster than ec2's with less latency
+- Firecracker microVM - only implements the devices needed
+- https://firecracker-microvm.github.io/
+- https://aws.amazon.com/blogs/opensource/firecracker-open-source-secure-fast-microvm-serverless/
+Lambda
+- Enterprises are rapidly adopting serverless
+- Dowd - Vanguard
+  - no downtime tolerated
+  - 2500 applications
+  - business value at startup speed
+    - continuous delivery
+    - devops
+    - daily Deployments
+  - almost 100% cloud
+Evolvable architecture
+- S3 is now 262 microservices
+- Everything fails all the time
+- Regional architecture - cell based
+- zonal cell based
+- not all data needs to be accessible to all clients
+- Physalia
+  - millions of tiny databases
+  - colony of micro-cells
+  - error rate against configuration master dropped immensely after Physalia
+  - shuffle sharding
+Amazon Builders Library
+- https://aws.amazon.com/builders-library
+Sebastian - S
+- Saildrone global fleet
+- Saildrone forecast app
+- 85% of seabed is unexplored
+- Ocean Surveyor - 1 ton of sonar equipment / 72 foot vehicle
+Industry 4.0
+- Automation
+- average age of equipment is 20+ years old
+- use machine learning to predict how orders should be ordered,
+  bought and delivered
+- Improving workplace safety
+  - woodside natural gas
+- Volkswagen
+- Aquabyte
