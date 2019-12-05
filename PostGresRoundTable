@@ -1,0 +1,18 @@
+PostGres What's new
+===================================
+Up to 5 regions / up to 16 read replicas per regions
+10.7 Aurora
+10.11 is latest PostGres
+will be GA by end of the year
+Managed RPO - asynch replication - let's you set how far you can get behind
+  before you start accepting commits
+Latency and other metrics exposed through cloudwatch
+cannot switch the master back and forth - have to recreate the master
+Cross region failover / failback / managed
+have to restart if you change settings
+export to S3
+federated query from redshift to aurora
+Why is postgres aurora not in parity with postgres?
+query plan management available in postgres Aurora
+Timescale db is on the roadmap for Q1 2020
+zero downtime patching 
